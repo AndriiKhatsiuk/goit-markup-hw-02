@@ -20,34 +20,45 @@ body {
 background-color: var(--main-white-color);
 }
 
-.header-logo {
-font-family: "Raleway";
-color: var(--main-dark-color);
-text-transform: uppercase;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-text-decoration: none;
-}
-.header-logo-web-text {
-font-family: "Raleway";
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #4d5ae5;
-}
-.header-list {
+.header-navigation {
+font-family: 'Roboto';
+font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 1.5;
+line-height: 1.33;
 letter-spacing: 0.02em;
-color: var(--main-dark-color);
+color: #2E2F42;
+
+}
+
+.header-logo {
+    font-family: "Raleway";
+    color: var(--main-dark-color);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+}
+.header-logo-web {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+.header-list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-dark-color);
 }
 
 .header-link {
-color: var(--main-dark-color);
+    color: var(--main-dark-color);
 }
 .header-link:hover,
 .header-link:focus {
@@ -64,10 +75,10 @@ color: #434455;
 color: #404bbf;
 }
 
-/* main section */
+/* main */
 
 .main {
-background-color: var(--main-dark-color);
+    background-color: var(--main-dark-color);
 }
 .main-header {
     font-weight: 700;
@@ -76,7 +87,7 @@ background-color: var(--main-dark-color);
     letter-spacing: 0.02em;
     color: var(--main-white-color);
 }
-.main-btn {
+.main-button {
     font-family: inherit;
     background: #4d5ae5;
     color: var(--main-white-color);
@@ -84,4 +95,117 @@ background-color: var(--main-dark-color);
 .main-btn:focus,
 .main-btn:hover {
     background: #404bbf;
+}
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.attitudes-header{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.attitudes-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-dark-color);
+}
+
+.attitudes-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+  /* products */
+
+.products-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--main-dark-color);
+}
+
+  /* team */
+
+.team {
+    background: #f4f4fd;
+}
+.team-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--main-dark-color);
+}
+
+.team-item {
+    background-color: var(--main-white-color);
+}
+.team-item-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-dark-color);
+}
+.team-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+  /* footer */
+.footer {
+    background: var(--main-dark-color);
+}
+.footer-logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f4f4fd;
+}
+.footer-logo-web {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+.footer-title {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #e7e9fc;
+}
+.footer-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+color: #E7E9FC;
 }
