@@ -2,6 +2,28 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--main-dark-color);
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.container{
+    width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
+}
 .list {
     list-style: none;
 }
@@ -24,7 +46,22 @@ body {
 
 .header {
 background-color: var(--main-white-color);
+padding-top: 32px;
+padding-bottom: 32px;
 }
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+
 
 .header-logo {
     font-family: var(--font-family-raleway);
@@ -34,6 +71,7 @@ background-color: var(--main-white-color);
     font-size: 18px;
     line-height: 1.33;
     text-decoration: none;
+    margin-right: 156px;
 }
 .header-logo-web {
     font-family: var(--font-family-raleway);
@@ -45,11 +83,13 @@ background-color: var(--main-white-color);
     color: var(--logo-and-btn-color);
 }
 .header-list {
+    display: flex;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-dark-color);
+    gap: 40px;
 }
 
 .header-link {
@@ -62,8 +102,12 @@ background-color: var(--main-white-color);
 .contacts-address {
     font-style: normal;
 }
+.contacts-list{
+    display: flex;
+}
 .contact-link {
     color: var(--dark-color);
+    margin-right: 40px;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -72,9 +116,15 @@ background-color: var(--main-white-color);
 /* main */
 
 .main {
+    width: 1440px;
+height: 600px;
+left: 0px;
+top: 72px;
     background-color: var(--main-dark-color);
 }
 .main-header {
+    
+    mask-size: 494px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -89,11 +139,15 @@ background-color: var(--main-white-color);
     line-height: var(--main-line-height);
     cursor: pointer;
 }
+
+
 .main-btn:focus,
 .main-btn:hover {
     background: var(--focus-and-hover-color);
+    
 }
 .visually-hidden {
+    margin: 8px;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -105,7 +159,23 @@ background-color: var(--main-white-color);
     overflow: hidden;
 }
 
+.attitudes-item{
+    margin-left: 24px;
+    mask-size: 264px;
+}
+.attitudes-list{
+    display: flex;
+    padding: 120px 156px;
+    margin-left: 24px;
+    gap: 24px;
+
+}
+
+
+
 .attitudes-item-title {
+    margin-right: 24px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -123,11 +193,18 @@ background-color: var(--main-white-color);
   /* products */
 
 .products-header {
+    display: block;
+    margin: 0 auto;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-dark-color);
+}
+
+.products-list{
+    display: flex;
+    width: calc(( 100% - 24px)  /3 );
 }
 
   /* team */
